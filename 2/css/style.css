@@ -1,0 +1,6 @@
+.wrapper{
+    width: 300px;
+    height: 500px;
+    background: url("../images/0.jpg") no-repeat 0 0;
+    margin: 30px auto;
+}
