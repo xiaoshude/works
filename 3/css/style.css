@@ -1,0 +1,190 @@
+.sidebar{
+    width: 35px;
+    position: fixed;
+    height: 100%;
+    background: #ececec;
+}
+ul{
+    width: 35px;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    z-index: 999;
+    background: #ececec;
+}
+ul>li{
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+.close-sidebar{
+    position: absolute;
+    width: 35px;
+    bottom: 50px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+}
+.item{
+    position: absolute;
+    left:-160px;
+    opacity: 0;
+    width: 160px;
+    height: 100%;
+    background: #ececec;
+    border: 1px solid #c7c7c7;
+}
+.sidebar-con>div>p{
+    text-align: center;
+    padding-top: 10px;
+}
+.sidebar-con>div>span{
+    position: absolute;
+    right: 3px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.sml{
+    animation-name: smla;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-name: smla;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes smla {
+    from{}
+    to{
+        transform: translateX(-35px);
+        -webkit-transform: translateX(-35px);
+    }
+}
+@keyframes smla {
+    from{}
+    to{
+        transform: translateX(-35px);
+        -webkit-transform: translateX(-35px);
+    }
+}
+.cmr{
+    /*left: 120px;*/
+    animation-name: cmra;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-name: cmra;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes cmra {
+    from{}
+    to{
+        -webkit-transform: translateX(100px) scale(1.5) rotate(405deg);
+    }
+}
+@keyframes cmra {
+    from{}
+    to{
+        transform: translateX(100px) scale(1.5) rotate(405deg);
+    }
+}
+.smr{
+    /*left: 0px;*/
+    animation-name: smra;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-name: smra;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes smra {
+    to{
+        transform: translateX(35px);
+        -webkit-transform: translateX(35px);
+    }
+}
+@keyframes smra {
+    to{
+        transform: translateX(35px);
+        -webkit-transform: translateX(35px);
+    }
+}
+.cml{
+    /*left: 0;*/
+    animation-name: cmla;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-name: cmla;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes cmla{
+    from{
+        -webkit-transform:scale(1.5);
+    }
+    to{
+        transform: translateX(-100px) scale(1) rotate(-360deg);
+        -webkit-transform: translateX(-100px) scale(1) rotate(-360deg);
+    }
+}
+@keyframes cmla{
+    from{
+        transform:scale(1.5)
+    }
+    to{
+        transform: translateX(-100px) scale(1) rotate(-360deg);
+    }
+}
+.sidebarCon-move-right{
+   /* left:35px;
+    opacity: 1;*/
+    animation-name: scmra;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-name: scmra;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes scmra{
+    from{
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: translateX(195px);
+    }
+}
+@keyframes scmra{
+    from{
+    }
+    to{
+        opacity: 1;
+        transform: translateX(195px);
+        -webkit-transform: translateX(195px);
+    }
+}
+.sidebarCon-move-left{
+    animation-name: scmla;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-name: scmla;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes scmla{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        -webkit-transform: translateX(-195px);
+    }
+}
+@keyframes scmla{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-195px);
+        -webkit-transform: translateX(-195px);
+    }
+}
