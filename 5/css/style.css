@@ -1,0 +1,238 @@
+body{
+    background: #343434;
+}
+.container{
+    margin: 60px auto;
+    width: 900px;
+    position: relative;
+}
+.box{
+    height: 180px;
+    width: 205px;
+    margin-left: 43px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+}
+img{
+   transition: 0.3s;
+}
+img:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+.tip{
+    box-sizing: border-box;
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    color: #2ecb6d;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    top: 180px;
+    left: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.80);
+    transition: 0.3s;
+    background: url("../images/allow.png") no-repeat 130px 13px;
+    cursor: pointer;
+}
+.tip:hover{
+    opacity: 1;
+    background-position: 140px 13px;
+}
+.tip-info{
+    display:block;
+    position: absolute;
+    background: #2ecb6d;
+    color: #ffffff;
+    padding: 10px;
+    word-break: keep-all;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 17px;
+    border-radius: 5px;
+    opacity: 0;
+}
+.tip-ani{
+    animation-name: tipAni;
+    animation-duration: 0.5s;
+    animation-fill-mode:forwards ;
+}
+@keyframes tipAni {
+    to{
+        opacity: 1;
+        top: 123px;
+    }
+
+}
+
+.tip-info-1{
+    top: 114px;
+    left: 71px;
+}
+.tip-info-2{
+    top: 114px;
+    left: 311px;
+}
+.tip-info-3{
+    top: 114px;
+    left: 518px;
+}
+.tri{
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border:7px solid transparent;
+    border-top-color:#2fcb6e;
+}
+.tri-1{
+    left: 77px;
+    top: 37px;
+}
+.tri-2{
+    left: 89px;
+    top: 37px;
+}
+.tri-3{
+    left: 132px;
+    top: 37px;
+}
+.line{
+    position: absolute;
+    z-index: 10;
+}
+.line1{
+    top: -2px;
+    left: -110%;
+    height: 2px;
+    background:#ffffff;
+    width: 0px;
+}
+.line2{
+    height: 0px;
+    background: #ffffff;
+    width: 2px;
+    top: -110%;
+    right:-2px;
+}
+.line3{
+    height: 2px;
+    background: #ffffff;
+    width: 0px;
+    bottom: -2px;
+    right:-110%;
+}
+.line4{
+    height: 0px;
+    background: #ffffff;
+    width: 2px;
+    bottom: -110%;
+    left: -2px;
+}
+.line1-ani{
+    animation-duration: 0.5s;
+    animation-name: line1Ani;
+    animation-fill-mode: forwards;
+}
+@keyframes line1Ani {
+    to{
+        width:178px;
+        left: -2px;
+    }
+}
+.line2-ani{
+    animation-duration: 0.5s;
+    animation-name: line2Ani;
+    animation-fill-mode: forwards;
+}
+@keyframes line2Ani {
+    to{
+        height:48px;
+        top: -2px;
+    }
+}
+.line3-ani{
+    animation-duration: 0.5s;
+    animation-name: line3Ani;
+    animation-fill-mode: forwards;
+}
+@keyframes line3Ani {
+    to{
+        width: 178px;
+        right: -2px;
+    }
+}
+.line4-ani{
+    animation-duration: 0.5s;
+    animation-name: line4Ani;
+    animation-fill-mode: forwards;
+}
+@keyframes line4Ani {
+
+    to{
+        height:48px;
+        bottom: -2px;
+    }
+}
+
+.line1-ani-l{
+    animation-duration: 0.5s;
+    animation-name: line1AniL;
+    animation-fill-mode: forwards;
+}
+@keyframes line1AniL {
+    from{
+        width:178px;
+        left: -2px;
+    }
+    to{
+
+    }
+}
+.line2-ani-l{
+    animation-duration: 0.5s;
+    animation-name: line2AniL;
+    animation-fill-mode: forwards;
+}
+@keyframes line2AniL {
+    from{
+        height:48px;
+        top: -2px;
+    }
+    to{
+
+    }
+}
+.line3-ani-l{
+    animation-duration: 0.5s;
+    animation-name: line3AniL;
+    animation-fill-mode: forwards;
+}
+@keyframes line3AniL {
+    from{
+        width: 178px;
+        right: -2px;
+    }
+    to{
+
+    }
+}
+.line4-ani-l{
+    animation-duration: 0.5s;
+    animation-name: line4AniL;
+    animation-fill-mode: forwards;
+}
+@keyframes line4AniL {
+    from{
+        height:48px;
+        bottom: -2px;
+    }
+    to{
+
+    }
+}
+
