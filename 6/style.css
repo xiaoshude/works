@@ -1,0 +1,275 @@
+/*
+reset style
+*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.5 helvetica, tahoma, arial, sans-serif;
+}
+
+@media screen and(-webkit-min-device-pixel-ratio: 0) {
+    html body, button, input, select, textarea {
+        font-family: 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif;
+    }
+}
+
+@-moz-document url-prefix() {
+    html body, button, input, select, textarea {
+        font-family: 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+
+code, kbd, pre, samp {
+    font-family: courier new, courier, monospace;
+}
+
+small {
+    font-size: 12px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    color: white;
+    font-family:  'Microsoft YaHei',sans-serif;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+}
+/*
+reset style end
+*/
+.container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.container .scroller{
+    position: absolute;
+}
+.container section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.page1 {
+    background: transparent url(images/1.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    text-align: center;
+
+}
+.page2 {
+    background: transparent url(images/2.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page3 {
+    background: transparent url(images/3.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page4 {
+    background: transparent url(images/4.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page5 {
+    background: transparent url(images/5.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page6 {
+    background: transparent url(images/6.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page7 {
+    background: transparent url(images/7.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+.download{
+
+}
+.page1 h2{
+    font-size: 2.6rem;
+    font-weight: normal;
+    line-height: 50px;
+    color: #ffffff;
+    margin-top:11%;
+}
+.page1 p{
+    font-size: 1.3rem;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: '宋体',sans-serif;
+    margin:2% auto;
+}
+.page1 .download{
+    display: block;
+    width:58%;
+    height: 56px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 23px;
+    line-height: 56px;
+    margin: 0 auto;
+    color: #ffffff;
+    background: transparent;
+
+}
+.page2 p{
+    text-align: center;
+}
+.page2 p:first-child{
+    font-size: 1.6rem;
+    font-family: '宋体',sans-serif;
+    margin-top:16%;
+}
+.page2 p:first-child span{
+    font-size: 1.8rem;
+}
+.page2 p:last-child{
+    font-size: 1.7rem;
+}
+.page3 p:first-child{
+    font-size: 1.8rem;
+    font-family: '宋体',sans-serif;
+    margin-top:16%;
+}
+.page3 p:last-child{
+    font-size: 1.3rem;
+}
+.page4 p:first-child{
+    font-size: 1.8rem;
+    font-family: '宋体',sans-serif;
+    margin-top:16%;
+}
+.page4 p:last-child{
+    font-size: 1.3rem;
+}
+.page5 p:first-child{
+    font-size: 2rem;
+    margin-top:16%;
+}
+.page5 p:last-child{
+    font-size: 1.2rem;
+}
+.page6 p:first-child{
+    font-size: 2rem;
+    margin-top:16%;
+}
+.page6 p:last-child{
+    font-size: 1.2rem;
+}
+
+.page7 .box{
+    margin-top:8%;
+    text-align: left;
+    vertical-align: top;
+}
+.page7 .box img{
+    border: 3px solid rgba(202, 250, 199, 0.78);
+    margin-left: 3%;
+    border-radius: 5px;
+}
+.page7 .box p{
+    display: inline-block;
+    vertical-align: top;
+    margin-left:2%;
+}
+.page7 .box p span:first-child{
+    font-size: 1.7rem;
+}
+.page7 .box p span:last-child{
+    font-size: 1.3rem;
+    font-family: '宋体',sans-serif;
+}
+.page7 .d-wrapper{
+    text-align: right;
+}
+.page7 .download{
+    position: absolute;
+    text-align: center;
+    display: block;
+    width:40%;
+    height: 53px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 23px;
+    line-height: 56px;
+    right:5%;
+    top: 30%;
+    color: #ffffff;
+    background: transparent;
+}
+
+.scroll-arr{
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -28px;
+    bottom: 5%;
+    width: 57px;
+    height: 31px;
+    -webkit-animation: arr-ani 1.2s ease-out infinite;
+    animation: arr-ani 1.2s ease-out infinite;
+}
+@-webkit-keyframes arr-ani {
+    0% {-webkit-transform:translateY(10px); opacity: 0.5;}
+    100% { -webkit-transform:translateY(-10px); opacity: 0;}
+}
+@keyframes arr-ani {
+0% {-webkit-transform:translateY(10px); opacity: 0.5;}
+100% { -webkit-transform:translateY(-10px); opacity: 0;}
+}
+.arr-g{
+    background: url("images/scrolldowng.png") no-repeat;
+}
+.arr-w{
+    background: url("images/scrolldownw.png") no-repeat;
+}
+.download-icon{
+    position: absolute;
+    display: block;
+    background: url("images/download.png") no-repeat;
+    width: 41px;
+    height: 38px;
+    right: 5%;
+    top: 2%;
+    border: none;
+}
